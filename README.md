@@ -1,6 +1,6 @@
 # Description
 ***
-Biography page that makes client-side request to this API, and display the results in an attractive way
+Biography page that makes client-side request to API, and display the results in an attractive way
 ***
 # Front End
 ***
