@@ -1,26 +1,15 @@
-.u-section-1 {
-
-  background-position: 50% 50%;
-}
-
-.u-section-1 .u-sheet-1 {
-  min-height: 613px;
-}
-
 .u-tags {
   background-color:MediumSeaGreen;
   border:solid;
-
-
 }
 
-.u-section-1 .u-text-1 {
+.u-text-1 {
   font-size: 3rem;
   margin: -54px 519px 0 0;
   color: white;
 }
 
-.u-section-1 .u-text-2 {
+.u-text-2 {
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -28,19 +17,19 @@
   color: yellow;
 }
 
-.u-section-1 .u-text-3 {
+.u-text-3 {
   margin: 20px 519px 0 0;
    color: #888844;
 }
 
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
+
 .u-image
 {
   object-fit: cover;
@@ -55,13 +44,8 @@ body {
   position: relative;
   width: 1140px;
   margin: 0 auto;
-}
-
-.u-valign-bottom {
+  min-height: 613px;
   display: flex;
   flex-direction: column;
-}
-
-.u-valign-bottom {
   justify-content: flex-end;
 }
