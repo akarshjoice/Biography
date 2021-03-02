@@ -1,5 +1,5 @@
 
-/* Fetching from API endpoint */
+/* Fetch from API endpoint */
 async function getUsers()  
 {
    
@@ -12,7 +12,7 @@ async function getUsers()
 }
 
 
-/* Add ReadMore button */
+/* To Add SeeMore button */
 function myFunction(x) 
 {
   var moreText = document.getElementById("more_" + x);
@@ -25,7 +25,7 @@ function myFunction(x)
 }
 
 
-/* Render Each User and add each to HTML page */
+/* Render Each User into HTML page */
 async function renderUsers() {
    var users = await getUsers();
    var html = '';         
@@ -41,7 +41,7 @@ async function renderUsers() {
           var count = 0;          
           var str2='';
           
-          // Find all '/n' and replace them with <br> and also add ReadMore button after one newline '\n' (can be extended to add after two newlines)
+          // To find all '/n' and also add seemore button
           for( let i=0;;i++)                       
           {
               var pos = str.indexOf("\n");
@@ -52,7 +52,6 @@ async function renderUsers() {
                 var str = str.replace("\n", "<br>");
                 
                 if(count == 1) {
-                  str = str.replace(/\n/g, "<br>");
                   str2= str2 + str.substring(pos+4);  
                   str = str.substring(0,pos+4);  
                   str = str + '<span style="display:none" id="more_' + user.id + '">' + str2 + '</span>';     
@@ -62,9 +61,9 @@ async function renderUsers() {
           }        
           
           // Appending Data of each User
-          html+= '<section class="u-image u-section-1"  style=background-image:url(\"images/'+ user.id +'.jpg\");>' +
-                   '<div class="u-sheet u-valign-bottom u-sheet-1">' +
-                      '<h2 class="u-text u-text-1">' + user.name + '</h2>' + '<br>' +'<date style=color:#ff99ce>' + user.date_of_birth + '</date>' + '<br>' +
+          html+= '<section class="u-image"  style=background-image:url(\"images/'+ user.id +'.jpg\");>' +
+                   '<div class="u-sheet">' +
+                      '<h2 class="u-text-1">' + user.name + '</h2>' + '<br>' +'<date style=color:#ff99ce>' + user.date_of_birth + '</date>' + '<br>' +
                           '<h3 class="u-text-2" >BIOGRAPHY</h3>' +
                               '<p class="u-text-3">' + str + '</p><br><br>' +
                               '<p >' + tags + '</p>' +
