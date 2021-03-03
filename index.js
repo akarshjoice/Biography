@@ -52,6 +52,7 @@ async function renderUsers() {
                 var str = str.replace("\n", "<br>");
                 
                 if(count == 1) {
+                  str = str.replace(/\n/g, "<br>");
                   str2= str2 + str.substring(pos+4);  
                   str = str.substring(0,pos+4);  
                   str = str + '<span style="display:none" id="more_' + user.id + '">' + str2 + '</span>';     
